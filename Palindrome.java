@@ -41,21 +41,30 @@ class Palindrome
 	{
 		String str = "abcdcba";
 
-		String sum = "";
-		for(int i=str.length()-1; i>=0; i--)
-		{
-			sum += str.charAt(i);
-		}	
+		// Reverse the string
+		// String rev = "";
+		// for(int i=str.length()-1; i>=0; i--)
+		// {
+		// 	rev += str.charAt(i);
+		// }	
 
-		System.out.println(sum);
+		// if(str.equals(rev))
+		// 	System.out.println("String is palindrome " + str);
+		// else
+		// 	System.out.println("String is NOT palindrome " + str);
 
-		// int n1=1, n2=1;
-		// String s1="a", s2="a";
+		// Using two pointer
+		int s = 0;
+		int e = str.length()-1;
 
-		// if(sum == str) // return 0
-		if(str.equals(sum))
-			System.out.println("String is palindrome " + str);
-		else
-			System.out.println("String is NOT palindrome " + str);
+		while(s < e) {
+			if(str.charAt(s) == str.charAt(e)) {
+				s++;
+				e--;
+			} else {
+				System.out.print("String is not palindrome");
+			}
+		}
+		System.out.print("String is palindrome");
 	}
 }

@@ -3,36 +3,23 @@
 import java.util.Scanner;
 
 
-class Factorial
-{
-	// Iterative solution
-	// static int findFactorial(int n)
-	// {
-	// 	int sum = 1;
-	// 	while(n>=1)
-	// 	{
-	// 		sum *= n;
-	// 		n--;
-	// 	}
-
-	// 	return sum;
-	// }
-
-	// Recursive solution
-	static int findFactorial(int n)
-	{
+class Factorial {
+	static int findFactorial(int n) {
+		// Iterative solution
+		// int sum = 1;
+		// while(n>=1) {
+		// 	sum *= n;
+		// 	n--;
+		// }
+		// return sum;
+		// Recursive solution
 		if(n <= 1)
 			return 1;
 		
 		return n * findFactorial(n-1);
 	}
 
-	public static void main(String[] args) 
-	{
-		// Scanner scan = new Scanner(System.in);
-
-		// int n = scan.nextInt();
-
+	public static void main(String[] args) {
 		int result = findFactorial(5);
 		System.out.print(result);
 	}

@@ -1,3 +1,4 @@
+// constaints 10^5 it doesn't support int and array, it support long long int and vector
 /***************** Java Program to Check Armstrong Number *****************/
 // // 153 = 1*1*1 + 5*5*5 + 3*3*3 = 153
 // // 1634 = 1*1*1*1 + 6*6*6*6 + 3*3*3*3 + 4*4*4*4 = 1634
@@ -12,9 +13,7 @@ class Armstrong
 		int n = scan.nextInt();
 
 		int temp = n;
-
 		int len = String.valueOf(temp).length();
-
 		int sum = 0;
 		for(int i=0; i<len; i++)
 		{
