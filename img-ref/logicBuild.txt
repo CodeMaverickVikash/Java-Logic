@@ -1,0 +1,16 @@
+execution of increment and decrement expression in java
+
+Pre-increment
+y = ++x
+1) increase x
+2) assign to y
+
+Post-increment
+y = x++		
+1) assign to y
+2) increase x
+
+we have to solve three expression
+a++ + a++
+++a + ++a
+++a + a++
